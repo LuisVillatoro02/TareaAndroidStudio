@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F1FF"
+    android:backgroundTint="#AF4848"
+    tools:context=".RegistrodeProducto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#AF4848"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:text="Registrar Producto"
+            android:textAlignment="center"
+            android:textColor="#CAA529"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="100sp"
+            android:layout_marginRight="50sp"
+            android:backgroundTint="#C9A429"
+            android:ems="10"
+            android:hint="Codigo "
+            android:inputType="phone"
+            android:textColorHint="#C9A429" />
+
+        <EditText
+            android:id="@+id/editTextNombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="50sp"
+            android:backgroundTint="#C9A429"
+            android:ems="10"
+            android:hint="Producto"
+            android:inputType="textPersonName"
+            android:textColorHint="#C9A429" />
+
+        <EditText
+            android:id="@+id/editTextPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="50sp"
+            android:backgroundTint="#C9A429"
+            android:ems="10"
+            android:hint="Precio "
+            android:inputType="phone"
+            android:textColorHint="#C9A429" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="150sp"
+            android:layout_marginRight="50sp"
+            android:backgroundTint="#CAA529"
+            android:onClick="onClick"
+            android:text="Guardar"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:backgroundTint="#CAA529"
+            android:onClick="onClick"
+            android:text="regresar"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
